@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passta Passwords</title>
+    <link rel="icon" href="Favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <img src="Passta.png" alt="Passta Logo" class="logo-img">
+
+        <div class="content-container">
+            
+            <details class="settings-dropdown">
+                <summary class="settings-summary">Portion Size</summary>
+                <div class="slider-container">
+                    <label for="lengthSlider" class="slider-label">
+                        <span id="lengthDisplay" class="highlight-number">10</span> <span class="highlight-text">chars</span>
+                    </label>
+                    <input type="range" id="lengthSlider" name="length" min="10" max="18" step="2" value="10">
+                </div>
+            </details>
+
+            <div class="divider"></div>
+
+            <div class="display-box-container">
+                 <div class="display-box-bg"></div>
+                <div class="display-box" id="passwordOutput"></div>
+            </div>
+
+            <button class="main-btn" onclick="generatePassword()">Order Fresh</button>
+            <br>
+            <button class="copy-btn" onclick="copyPassword()">Copy to Menu</button>
+
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-text">Est. 2025 • Passta Inc.</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
