@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://passtasource.com/sitemap.xml
